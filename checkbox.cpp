@@ -7,6 +7,7 @@ CheckBox::CheckBox(int x, int y, int xmeret, int ymeret, int p)
 {
     _checked=false;
     player=p;
+    focusable=1;
 }
 
 void CheckBox::draw()
@@ -30,11 +31,12 @@ void CheckBox::draw()
 
 void CheckBox::handle(event ev)
 {
-    if (ev.type == ev_key && (ev.keycode == key_enter || ev.keycode == ' ')) {
+    /*if (ev.type == ev_key && (ev.keycode == key_enter || ev.keycode == ' ')) {
             _checked = true;
-    }
+    }*/
     if (ev.type == ev_mouse && is_selected(ev.pos_x, ev.pos_y) && ev.button==btn_left) {
         _checked = true;
+        focusable=0;
     }
 }
 bool CheckBox::is_checked()
@@ -48,7 +50,7 @@ void CheckBox::setPlayer(int p)
 }
 bool CheckBox::isnt_statik()
 {
-    return 1;
+    return focusable;
 }
 void CheckBox::loseFocus()
 {

@@ -132,7 +132,7 @@ Application::Application(int _res1,int _res2)
                                 widgets[focus]->loseFocus();
                             focus = i;
                             checked=true;
-                            if(focus>=size_widgets)
+                            if(focus>=size_widgets && widgets[focus]->isnt_statik())
                             {
                                 JatekMester->setValue((focus - size_widgets) / JatekMester->getColumn(),(focus - size_widgets) % JatekMester->getColumn(),player);
                                 player=-player;
@@ -179,15 +179,15 @@ Application::Application(int _res1,int _res2)
                 int index2 = (focus - size_widgets) % JatekMester->getColumn();
                 if(JatekMester->win(index1,index2)==1)
                 {
-                    gout << move_to(30,300) << color(255,0,0) << text(player1+" won!");
+                    gout << move_to(30,20) << color(255,0,0) << text(player1+" won!");
                 }
                 if(JatekMester->win(index1, index2)==2)
                 {
-                    gout << move_to(30,300) << color(255,0,0) << text(player2+" won!");
+                    gout << move_to(30,20) << color(255,0,0) << text(player2+" won!");
                 }
                 if(JatekMester->matrixfull())
                 {
-                    gout << move_to(30,300) << color(255,0,0) << text("DRAW!");
+                    gout << move_to(30,20) << color(255,0,0) << text("DRAW!");
                 }
             }
             gout << refresh;

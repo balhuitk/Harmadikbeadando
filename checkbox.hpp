@@ -8,6 +8,7 @@ class CheckBox : public Widget {
 protected:
     bool _checked;
     int player;
+    int focusable;
 public:
     CheckBox(int x, int y, int xmeret, int ymeret, int p);
     virtual void draw() ;
