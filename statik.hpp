@@ -18,7 +18,7 @@ public:
     virtual bool is_checked() ;
     virtual bool isnt_statik();
     virtual void loseFocus();
-    virtual void SetValue();
+    virtual void setValue(std::string text);
     virtual void setPlayer(int p);
 };
 #endif // STATIK_HPP_INCLUDED

@@ -13,24 +13,21 @@ Application::Application(int _res1,int _res2)
         res2=_res2;
         gout.open(res1,res2);
         n1 = new Num_Change(130,670,100,30,15, 30);
-        n2 = new Num_Change(240,670,100,30,15, 30);
+        n2 = new Num_Change(350,670,100,30,15, 30);
         widgets.push_back(n1);
         widgets.push_back(n2);
 
-        std::vector <std::string> options;
-        options.push_back("Egyjatekos");
-        options.push_back("Ketjatekos");
-        m1 = new Menu(350,670,150, 30, 100, options);
-        widgets.push_back(m1);
 
         s1 = new Statik(130, 640, 100, 30, "Sorok");
-        s2 = new Statik(240, 640, 100, 30, "Oszlopok");
+        s2 = new Statik(350, 640, 100, 30, "Oszlopok");
         s3 = new Statik(130, 720, 100, 30, "Jatekos1");
         s4 = new Statik(350, 720, 100, 30, "Jatekos2");
+        s5 = new Statik(30, 10, 100, 30, "Jo jatekot!");
         widgets.push_back(s1);
         widgets.push_back(s2);
         widgets.push_back(s3);
         widgets.push_back(s4);
+        widgets.push_back(s5);
 
         d1 = new Dinamik(130, 750, 100,30, "Nev1");
         d2 = new Dinamik(350, 750, 100,30, "Nev2");
@@ -51,11 +48,11 @@ Application::Application(int _res1,int _res2)
     {
         widgets.push_back(n1);
         widgets.push_back(n2);
-        widgets.push_back(m1);
         widgets.push_back(s1);
         widgets.push_back(s2);
         widgets.push_back(s3);
         widgets.push_back(s4);
+        widgets.push_back(s5);
         widgets.push_back(d1);
         widgets.push_back(d2);
         widgets.push_back(p1);
@@ -65,6 +62,8 @@ Application::Application(int _res1,int _res2)
 
     void Application::Start(Num_Change * n1, Num_Change * n2, Dinamik * d1, Dinamik * d2)
     {
+        for(size_t i=0;i<palya.size();i++)
+            delete palya[i];
         widgets.clear();
         feltolt(widgets);
         palya.clear();
@@ -72,6 +71,7 @@ Application::Application(int _res1,int _res2)
         int b=n2->getValue();
         player2=d1->getValue();
         player1=d2->getValue();
+        s5->setValue("Jo jatekot!");
         for(int i=0;i<a;i++)
         {
             for(int j=0;j<b;j++)
@@ -179,7 +179,7 @@ Application::Application(int _res1,int _res2)
                 int index2 = (focus - size_widgets) % JatekMester->getColumn();
                 if(JatekMester->win(index1,index2)==1)
                 {
-                    gout << move_to(30,20) << color(255,0,0) << text(player1+" won!");
+                    s5->setValue(player1+" won!");
                     for(size_t i=0;i<palya.size();i++)
                     {
                         palya[i]->setStatic();
@@ -188,7 +188,7 @@ Application::Application(int _res1,int _res2)
                 }
                 if(JatekMester->win(index1, index2)==2)
                 {
-                    gout << move_to(30,20) << color(255,0,0) << text(player2+" won!");
+                    s5->setValue(player2+" won!");
                     for(size_t i=0;i<palya.size();i++)
                     {
                         palya[i]->setStatic();
@@ -196,7 +196,7 @@ Application::Application(int _res1,int _res2)
                 }
                 if(JatekMester->matrixfull())
                 {
-                    gout << move_to(30,20) << color(255,0,0) << text("DRAW!");
+                    s5->setValue("DRAW!");
                 }
             }
             gout << refresh;

@@ -24,11 +24,11 @@ private:
     bool jatekban;
     Num_Change * n1;
     Num_Change * n2;
-    Menu * m1;
     Statik * s1;
     Statik * s2;
     Statik * s3;
     Statik * s4;
+    Statik * s5;
     Dinamik * d1;
     Dinamik * d2;
     Push_Button * p1;

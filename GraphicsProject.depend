@@ -341,7 +341,7 @@
 1549888357 d:\lecke\bevprog\harmadikbeadando\include\graphics.hpp
 	<string>
 
-1558192857 d:\lecke\bevprog\harmadikbeadando\widgets.hpp
+1558275937 d:\lecke\bevprog\harmadikbeadando\widgets.hpp
 	"graphics.hpp"
 
 1558193071 source:d:\lecke\bevprog\harmadikbeadando\dinamik.cpp
@@ -381,7 +381,7 @@
 	<vector>
 	<string.h>
 
-1558192940 d:\lecke\bevprog\harmadikbeadando\statik.hpp
+1558275475 d:\lecke\bevprog\harmadikbeadando\statik.hpp
 	"graphics.hpp"
 	"widgets.hpp"
 	<string.h>
@@ -392,7 +392,7 @@
 	<string.h>
 	<functional>
 
-1558273822 d:\lecke\bevprog\harmadikbeadando\application.hpp
+1558275389 d:\lecke\bevprog\harmadikbeadando\application.hpp
 	"graphics.hpp"
 	"widgets.hpp"
 	"num_change.hpp"
@@ -418,15 +418,15 @@
 	"push_button.hpp"
 	"graphics.hpp"
 
-1558193071 source:d:\lecke\bevprog\harmadikbeadando\statik.cpp
+1558275475 source:d:\lecke\bevprog\harmadikbeadando\statik.cpp
 	"statik.hpp"
 	"graphics.hpp"
 
-1554637938 source:d:\lecke\bevprog\harmadikbeadando\widgets.cpp
+1558275971 source:d:\lecke\bevprog\harmadikbeadando\widgets.cpp
 	"widgets.hpp"
 	"graphics.hpp"
 
-1558273822 source:d:\lecke\bevprog\harmadikbeadando\application.cpp
+1558275704 source:d:\lecke\bevprog\harmadikbeadando\application.cpp
 	"application.hpp"
 	"graphics.hpp"
 	<fstream>

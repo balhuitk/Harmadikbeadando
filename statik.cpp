@@ -30,9 +30,9 @@ bool Statik::isnt_statik()
 {
     return 0;
 }
-void Statik::SetValue()
+void Statik::setValue(std::string text)
 {
-
+    _t=text;
 }
 void Statik::loseFocus()
 {
