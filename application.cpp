@@ -70,8 +70,8 @@ Application::Application(int _res1,int _res2)
         palya.clear();
         int a=n1->getValue();
         int b=n2->getValue();
-        player1=d1->getValue();
-        player2=d2->getValue();
+        player2=d1->getValue();
+        player1=d2->getValue();
         for(int i=0;i<a;i++)
         {
             for(int j=0;j<b;j++)
@@ -175,8 +175,8 @@ Application::Application(int _res1,int _res2)
             }
             if(jatekban && focus>size_widgets)
             {
-                int index2 = (focus - size_widgets) / JatekMester->getColumn();
-                int index1 = (focus - size_widgets) % JatekMester->getColumn();
+                int index1 = (focus - size_widgets) / JatekMester->getColumn();
+                int index2 = (focus - size_widgets) % JatekMester->getColumn();
                 if(JatekMester->win(index1,index2)==1)
                 {
                     gout << move_to(30,300) << color(255,0,0) << text(player1+" won!");

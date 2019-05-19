@@ -16,11 +16,27 @@ int Amoba_Logic::orizontal(int index1, int index2)
 {
     for(int k=1;k<6;k++)
     {
-        if((matrix[index2][index1-5+k] == matrix[index2][index1-4+k]) &&( matrix[index2][index1-4+k]== matrix[index2][index1-3+k]) &&(matrix[index2][index1-3+k] == matrix[index2][index1-2+k])
-           &&(matrix[index2][index1-2+k] == matrix[index2][index1-1+k]) &&(matrix[index2][index1-1+k] == 1))
+        bool check=true;
+        for(int i=1;i<6;i++)
+        {
+            if(index2-i+k>0 && index2-i+k<column)
+                {if(matrix[index1][index2-i+k]!=1)
+                    check=false;}
+            else
+                check=false;
+        }
+        if(check)
             return 1;
-        if((matrix[index2][index1-5+k] == matrix[index2][index1-4+k]) &&( matrix[index2][index1-4+k]== matrix[index2][index1-3+k]) &&(matrix[index2][index1-3+k] == matrix[index2][index1-2+k])
-           &&(matrix[index2][index1-2+k] == matrix[index2][index1-1+k]) &&(matrix[index2][index1-1+k] == 0))
+        check=true;
+        for(int i=1;i<6;i++)
+        {
+            if(index2-i+k>0 && index2-i+k<column)
+                {if(matrix[index1][index2-i+k]!=0)
+                    check=false;}
+            else
+                check=false;
+        }
+        if(check)
             return 2;
     }
     return 0;
@@ -28,13 +44,29 @@ int Amoba_Logic::orizontal(int index1, int index2)
 }
 int Amoba_Logic::vertical(int index1, int index2)
 {
-    for(int k=1;k<6;k++)
+     for(int k=1;k<6;k++)
     {
-        if((matrix[index2-5-k][index1] == matrix[index2-4+k][index1]) &&( matrix[index2-4+k][index1]== matrix[index2-3+k][index1]) &&(matrix[index2-3+k][index1] == matrix[index2-2+k][index1])
-           &&(matrix[index2-2+k][index1] == matrix[index2-1+k][index1]) &&(matrix[index2-1+k][index1] == 1))
+        bool check=true;
+        for(int i=1;i<6;i++)
+        {
+            if(index1-i+k>0 && index1-i+k<row)
+                {if(matrix[index1-i+k][index2]!=1)
+                    check=false;}
+            else
+                check=false;
+        }
+        if(check)
             return 1;
-        if((matrix[index2-5-k][index1] == matrix[index2-4+k][index1]) &&( matrix[index2-4+k][index1]== matrix[index2-3+k][index1]) &&(matrix[index2-3+k][index1] == matrix[index2-2+k][index1])
-           &&(matrix[index2-2+k][index1] == matrix[index2-1+k][index1]) &&(matrix[index2-1+k][index1] == 0))
+        check=true;
+        for(int i=1;i<6;i++)
+        {
+            if(index1-i+k>0 && index1-i+k<row)
+                {if(matrix[index1-i+k][index2]!=0)
+                    check=false;}
+            else
+                check=false;
+        }
+        if(check)
             return 2;
     }
     return 0;
@@ -43,11 +75,27 @@ int Amoba_Logic::diagonal(int index1, int index2)
 {
     for(int k=1;k<6;k++)
     {
-        if((matrix[index2-5+k][index1-5+k] == matrix[index2-4+k][index1-4+k]) &&( matrix[index2-4+k][index1-4+k]== matrix[index2-3+k][index1-3+k]) &&(matrix[index2-3+k][index1-3+k] == matrix[index2-2+k][index1-2+k])
-           &&(matrix[index2-2+k][index1-2+k] == matrix[index2-1+k][index1-1+k]) &&(matrix[index2-1+k][index1-1+k] == 1))
+        bool check=true;
+        for(int i=1;i<6;i++)
+        {
+            if(index1-i+k>0 && index1-i+k<row && index2-i+k>0 && index2-i+k<column)
+                {if(matrix[index1-i+k][index2-i+k]!=1)
+                    check=false;}
+            else
+                check=false;
+        }
+        if(check)
             return 1;
-        if((matrix[index2-5+k][index1-5+k] == matrix[index2-4+k][index1-4+k]) &&( matrix[index2-4+k][index1-4+k]== matrix[index2-3+k][index1-3+k]) &&(matrix[index2-3+k][index1-3+k] == matrix[index2-2+k][index1-2+k])
-           &&(matrix[index2-2+k][index1-2+k] == matrix[index2-1+k][index1-1+k]) &&(matrix[index2-1+k][index1-1+k] == 0))
+        check=true;
+        for(int i=1;i<6;i++)
+        {
+            if(index1-i+k>0 && index1-i+k<row && index2-i+k>0 && index2-i+k<column)
+                {if(matrix[index1-i+k][index2-i+k]!=0)
+                    check=false;}
+            else
+                check=false;
+        }
+        if(check)
             return 2;
     }
     return 0;
@@ -56,11 +104,27 @@ int Amoba_Logic::diagonal2(int index1, int index2)
 {
     for(int k=1;k<6;k++)
     {
-        if((matrix[index2+5-k][index1-5+k] == matrix[index2+4-k][index1-4+k]) &&( matrix[index2+4-k][index1-4+k]== matrix[index2+3-k][index1-3+k]) &&(matrix[index2+3-k][index1-3+k] == matrix[index2+2-k][index1-2+k])
-           &&(matrix[index2+2-k][index1-2+k] == matrix[index2+1-k][index1-1+k]) &&(matrix[index2+1-k][index1-1+k] == 1))
+        bool check=true;
+        for(int i=1;i<6;i++)
+        {
+            if(index1-i+k>0 && index1-i+k<row && index2+i-k>0 && index2+i-k<column)
+                {if(matrix[index1-i+k][index2+i-k]!=1)
+                    check=false;}
+            else
+                check=false;
+        }
+        if(check)
             return 1;
-        if((matrix[index2+5-k][index1-5+k] == matrix[index2+4-k][index1-4+k]) &&( matrix[index2+4-k][index1-4+k]== matrix[index2+3-k][index1-3+k]) &&(matrix[index2+3-k][index1-3+k] == matrix[index2+2-k][index1-2+k])
-           &&(matrix[index2+2-k][index1-2+k] == matrix[index2+1-k][index1-1+k]) &&(matrix[index2+1-k][index1-1+k] == 0))
+        check=true;
+        for(int i=1;i<6;i++)
+        {
+            if(index1-i+k>0 && index1-i+k<row && index2+i-k>0 && index2+i-k<column)
+                {if(matrix[index1-i+k][index2+i-k]!=0)
+                    check=false;}
+            else
+                check=false;
+        }
+        if(check)
             return 2;
     }
     return 0;

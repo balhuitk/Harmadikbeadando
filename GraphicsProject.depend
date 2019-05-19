@@ -330,3 +330,111 @@
 	"graphics.hpp"
 	<iostream>
 
+1558192541 source:d:\lecke\bevprog\harmadikbeadando\checkbox.cpp
+	"checkbox.hpp"
+	"graphics.hpp"
+
+1558191394 d:\lecke\bevprog\harmadikbeadando\checkbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1549888357 d:\lecke\bevprog\harmadikbeadando\include\graphics.hpp
+	<string>
+
+1558192857 d:\lecke\bevprog\harmadikbeadando\widgets.hpp
+	"graphics.hpp"
+
+1558193071 source:d:\lecke\bevprog\harmadikbeadando\dinamik.cpp
+	"dinamik.hpp"
+	"graphics.hpp"
+
+1558192940 d:\lecke\bevprog\harmadikbeadando\dinamik.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+
+1558198534 source:d:\lecke\bevprog\harmadikbeadando\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"num_change.hpp"
+	"menu.hpp"
+	"checkbox.hpp"
+	"statik.hpp"
+	"dinamik.hpp"
+	"push_button.hpp"
+	"application.hpp"
+	"amoba_logic.hpp"
+	<cstdlib>
+	<vector>
+	<math.h>
+	<fstream>
+	<functional>
+	<iostream>
+
+1558192919 d:\lecke\bevprog\harmadikbeadando\num_change.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1558192940 d:\lecke\bevprog\harmadikbeadando\menu.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+	<string.h>
+
+1558192940 d:\lecke\bevprog\harmadikbeadando\statik.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+
+1558192940 d:\lecke\bevprog\harmadikbeadando\push_button.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+	<functional>
+
+1558267468 d:\lecke\bevprog\harmadikbeadando\application.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"num_change.hpp"
+	"menu.hpp"
+	"checkbox.hpp"
+	"statik.hpp"
+	"dinamik.hpp"
+	"push_button.hpp"
+	"amoba_logic.hpp"
+
+1558268397 d:\lecke\bevprog\harmadikbeadando\amoba_logic.hpp
+	"graphics.hpp"
+
+1558193077 source:d:\lecke\bevprog\harmadikbeadando\menu.cpp
+	"menu.hpp"
+	"graphics.hpp"
+
+1558193071 source:d:\lecke\bevprog\harmadikbeadando\num_change.cpp
+	"num_change.hpp"
+	"graphics.hpp"
+
+1558193071 source:d:\lecke\bevprog\harmadikbeadando\push_button.cpp
+	"push_button.hpp"
+	"graphics.hpp"
+
+1558193071 source:d:\lecke\bevprog\harmadikbeadando\statik.cpp
+	"statik.hpp"
+	"graphics.hpp"
+
+1554637938 source:d:\lecke\bevprog\harmadikbeadando\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1558272254 source:d:\lecke\bevprog\harmadikbeadando\application.cpp
+	"application.hpp"
+	"graphics.hpp"
+	<fstream>
+	<vector>
+	<string.h>
+
+1558272260 source:d:\lecke\bevprog\harmadikbeadando\amoba_logic.cpp
+	"amoba_logic.hpp"
+	"graphics.hpp"
+	<iostream>
+
