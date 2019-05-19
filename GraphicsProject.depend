@@ -1,0 +1,332 @@
+# depslib dependency file v1.0
+1550409047 source:d:\lecke\bevprog\grafikus\main.cpp
+	"graphics.hpp"
+	<cstdlib>
+	<vector>
+	<math.h>
+
+1549884757 d:\lecke\bevprog\grafikus\include\graphics.hpp
+	<string>
+
+1555501882 source:d:\lecke\bevprog\widget_beadando\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"num_change.hpp"
+	"menu.hpp"
+	<cstdlib>
+	<vector>
+	<math.h>
+	<fstream>
+
+1549888357 d:\lecke\bevprog\widget_beadando\include\graphics.hpp
+	<string>
+
+1554637938 source:d:\lecke\bevprog\widget_beadando\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1555497263 d:\lecke\bevprog\widget_beadando\widgets.hpp
+	"graphics.hpp"
+
+1555497313 source:d:\lecke\bevprog\widget_beadando\num_change.cpp
+	"num_change.hpp"
+	"graphics.hpp"
+
+1555497320 d:\lecke\bevprog\widget_beadando\num_change.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1555500073 d:\lecke\bevprog\widget_beadando\menu.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+	<string.h>
+
+1555502097 source:d:\lecke\bevprog\widget_beadando\menu.cpp
+	"menu.hpp"
+	"graphics.hpp"
+
+1557143183 source:d:\lecke\bevprog\widgeteim\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"num_change.hpp"
+	"menu.hpp"
+	"checkbox.hpp"
+	"statik.hpp"
+	"dinamik.hpp"
+	"push_button.hpp"
+	<cstdlib>
+	<vector>
+	<math.h>
+	<fstream>
+	<functional>
+	<iostream>
+
+1549888357 d:\lecke\bevprog\widgeteim\include\graphics.hpp
+	<string>
+
+1556539107 d:\lecke\bevprog\widgeteim\widgets.hpp
+	"graphics.hpp"
+
+1556538998 d:\lecke\bevprog\widgeteim\num_change.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1556971978 d:\lecke\bevprog\widgeteim\menu.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+	<string.h>
+
+1556973299 source:d:\lecke\bevprog\widgeteim\menu.cpp
+	"menu.hpp"
+	"graphics.hpp"
+
+1556538998 source:d:\lecke\bevprog\widgeteim\num_change.cpp
+	"num_change.hpp"
+	"graphics.hpp"
+
+1554637938 source:d:\lecke\bevprog\widgeteim\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1556541727 source:d:\lecke\bevprog\widgeteim\checkbox.cpp
+	"checkbox.hpp"
+	"graphics.hpp"
+
+1556541572 d:\lecke\bevprog\widgeteim\checkbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1556972790 source:d:\lecke\bevprog\widgeteim\dinamik.cpp
+	"dinamik.hpp"
+	"graphics.hpp"
+
+1556972641 d:\lecke\bevprog\widgeteim\dinamik.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+
+1557143149 source:d:\lecke\bevprog\widgeteim\statik.cpp
+	"statik.hpp"
+	"graphics.hpp"
+
+1557143149 d:\lecke\bevprog\widgeteim\statik.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+
+1557141575 d:\lecke\bevprog\widgeteim\push_button.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+	<functional>
+
+1557141964 source:d:\lecke\bevprog\widgeteim\push_button.cpp
+	"push_button.hpp"
+	"graphics.hpp"
+
+1556541727 source:d:\lecke\bevprog\widget_keszlet\checkbox.cpp
+	"checkbox.hpp"
+	"graphics.hpp"
+
+1556541572 d:\lecke\bevprog\widget_keszlet\checkbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1549888357 d:\lecke\bevprog\widget_keszlet\include\graphics.hpp
+	<string>
+
+1558178807 d:\lecke\bevprog\widget_keszlet\widgets.hpp
+	"graphics.hpp"
+
+1558185676 d:\lecke\bevprog\widget_keszlet\application.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"num_change.hpp"
+	"menu.hpp"
+	"checkbox.hpp"
+	"statik.hpp"
+	"dinamik.hpp"
+	"push_button.hpp"
+
+1558178807 d:\lecke\bevprog\widget_keszlet\num_change.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1556971978 d:\lecke\bevprog\widget_keszlet\menu.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+	<string.h>
+
+1557143149 d:\lecke\bevprog\widget_keszlet\statik.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+
+1556972641 d:\lecke\bevprog\widget_keszlet\dinamik.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+
+1557141575 d:\lecke\bevprog\widget_keszlet\push_button.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+	<functional>
+
+1556972790 source:d:\lecke\bevprog\widget_keszlet\dinamik.cpp
+	"dinamik.hpp"
+	"graphics.hpp"
+
+1558179556 source:d:\lecke\bevprog\widget_keszlet\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"num_change.hpp"
+	"menu.hpp"
+	"checkbox.hpp"
+	"statik.hpp"
+	"dinamik.hpp"
+	"push_button.hpp"
+	"application.hpp"
+	<cstdlib>
+	<vector>
+	<math.h>
+	<fstream>
+	<functional>
+	<iostream>
+
+1556973299 source:d:\lecke\bevprog\widget_keszlet\menu.cpp
+	"menu.hpp"
+	"graphics.hpp"
+
+1556538998 source:d:\lecke\bevprog\widget_keszlet\num_change.cpp
+	"num_change.hpp"
+	"graphics.hpp"
+
+1557141964 source:d:\lecke\bevprog\widget_keszlet\push_button.cpp
+	"push_button.hpp"
+	"graphics.hpp"
+
+1557143252 source:d:\lecke\bevprog\widget_keszlet\statik.cpp
+	"statik.hpp"
+	"graphics.hpp"
+
+1554637938 source:d:\lecke\bevprog\widget_keszlet\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1558179408 source:d:\lecke\bevprog\widget_keszlet\application.cpp
+	"application.hpp"
+	"graphics.hpp"
+	<fstream>
+
+1558192541 source:d:\lecke\bevprog\beadando3\checkbox.cpp
+	"checkbox.hpp"
+	"graphics.hpp"
+
+1558191394 d:\lecke\bevprog\beadando3\checkbox.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1549888357 d:\lecke\bevprog\beadando3\include\graphics.hpp
+	<string>
+
+1558192857 d:\lecke\bevprog\beadando3\widgets.hpp
+	"graphics.hpp"
+
+1558193071 source:d:\lecke\bevprog\beadando3\dinamik.cpp
+	"dinamik.hpp"
+	"graphics.hpp"
+
+1558192940 d:\lecke\bevprog\beadando3\dinamik.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+
+1558193077 source:d:\lecke\bevprog\beadando3\menu.cpp
+	"menu.hpp"
+	"graphics.hpp"
+
+1558192940 d:\lecke\bevprog\beadando3\menu.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<vector>
+	<string.h>
+
+1558193071 source:d:\lecke\bevprog\beadando3\num_change.cpp
+	"num_change.hpp"
+	"graphics.hpp"
+
+1558192919 d:\lecke\bevprog\beadando3\num_change.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+
+1558193071 source:d:\lecke\bevprog\beadando3\push_button.cpp
+	"push_button.hpp"
+	"graphics.hpp"
+
+1558192940 d:\lecke\bevprog\beadando3\push_button.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+	<functional>
+
+1558193071 source:d:\lecke\bevprog\beadando3\statik.cpp
+	"statik.hpp"
+	"graphics.hpp"
+
+1558192940 d:\lecke\bevprog\beadando3\statik.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	<string.h>
+
+1554637938 source:d:\lecke\bevprog\beadando3\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1558198534 source:d:\lecke\bevprog\beadando3\main.cpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"num_change.hpp"
+	"menu.hpp"
+	"checkbox.hpp"
+	"statik.hpp"
+	"dinamik.hpp"
+	"push_button.hpp"
+	"application.hpp"
+	"amoba_logic.hpp"
+	<cstdlib>
+	<vector>
+	<math.h>
+	<fstream>
+	<functional>
+	<iostream>
+
+1558267468 d:\lecke\bevprog\beadando3\application.hpp
+	"graphics.hpp"
+	"widgets.hpp"
+	"num_change.hpp"
+	"menu.hpp"
+	"checkbox.hpp"
+	"statik.hpp"
+	"dinamik.hpp"
+	"push_button.hpp"
+	"amoba_logic.hpp"
+
+1558268617 source:d:\lecke\bevprog\beadando3\application.cpp
+	"application.hpp"
+	"graphics.hpp"
+	<fstream>
+	<vector>
+	<string.h>
+
+1558268397 d:\lecke\bevprog\beadando3\amoba_logic.hpp
+	"graphics.hpp"
+
+1558268397 source:d:\lecke\bevprog\beadando3\amoba_logic.cpp
+	"amoba_logic.hpp"
+	"graphics.hpp"
+	<iostream>
+
