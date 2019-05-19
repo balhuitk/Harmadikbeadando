@@ -76,7 +76,7 @@ Application::Application(int _res1,int _res2)
         {
             for(int j=0;j<b;j++)
             {
-                CheckBox * c=new CheckBox(30+i*20,30+j*20,20,20,-1);
+                CheckBox * c = new CheckBox(30+i*20,30+j*20,20,20,-1);
                 palya.push_back(c);
             }
         }
@@ -126,13 +126,13 @@ Application::Application(int _res1,int _res2)
                     checked=false;
                     for (size_t i=0; i<widgets.size(); i++)
                     {
-                        if (widgets[i]->is_selected(ev.pos_x, ev.pos_y))
+                        if (widgets[i]->is_selected(ev.pos_x, ev.pos_y)&& widgets[i]->isnt_statik())
                         {
                             if(focus != -1)
                                 widgets[focus]->loseFocus();
                             focus = i;
                             checked=true;
-                            if(focus>=size_widgets && widgets[focus]->isnt_statik())
+                            if(focus>=size_widgets )
                             {
                                 JatekMester->setValue((focus - size_widgets) / JatekMester->getColumn(),(focus - size_widgets) % JatekMester->getColumn(),player);
                                 player=-player;
@@ -180,10 +180,19 @@ Application::Application(int _res1,int _res2)
                 if(JatekMester->win(index1,index2)==1)
                 {
                     gout << move_to(30,20) << color(255,0,0) << text(player1+" won!");
+                    for(size_t i=0;i<palya.size();i++)
+                    {
+                        palya[i]->setStatic();
+                        //palya[i]->setPlayer(1);
+                    }
                 }
                 if(JatekMester->win(index1, index2)==2)
                 {
                     gout << move_to(30,20) << color(255,0,0) << text(player2+" won!");
+                    for(size_t i=0;i<palya.size();i++)
+                    {
+                        palya[i]->setStatic();
+                    }
                 }
                 if(JatekMester->matrixfull())
                 {

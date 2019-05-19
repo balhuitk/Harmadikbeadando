@@ -56,4 +56,7 @@ void CheckBox::loseFocus()
 {
 
 }
-
+void CheckBox::setStatic()
+{
+    focusable=0;
+}

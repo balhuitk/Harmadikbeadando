@@ -17,6 +17,7 @@ public:
     virtual bool isnt_statik();
     virtual void loseFocus();
     virtual void setPlayer(int p);
+    virtual void setStatic();
 };
 
 

@@ -330,11 +330,11 @@
 	"graphics.hpp"
 	<iostream>
 
-1558273199 source:d:\lecke\bevprog\harmadikbeadando\checkbox.cpp
+1558273822 source:d:\lecke\bevprog\harmadikbeadando\checkbox.cpp
 	"checkbox.hpp"
 	"graphics.hpp"
 
-1558273185 d:\lecke\bevprog\harmadikbeadando\checkbox.hpp
+1558273822 d:\lecke\bevprog\harmadikbeadando\checkbox.hpp
 	"graphics.hpp"
 	"widgets.hpp"
 
@@ -392,7 +392,7 @@
 	<string.h>
 	<functional>
 
-1558267468 d:\lecke\bevprog\harmadikbeadando\application.hpp
+1558273822 d:\lecke\bevprog\harmadikbeadando\application.hpp
 	"graphics.hpp"
 	"widgets.hpp"
 	"num_change.hpp"
@@ -426,7 +426,7 @@
 	"widgets.hpp"
 	"graphics.hpp"
 
-1558272929 source:d:\lecke\bevprog\harmadikbeadando\application.cpp
+1558273822 source:d:\lecke\bevprog\harmadikbeadando\application.cpp
 	"application.hpp"
 	"graphics.hpp"
 	<fstream>

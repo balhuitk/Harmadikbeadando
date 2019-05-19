@@ -14,7 +14,7 @@
 class Application {
 private:
     std::vector<Widget*> widgets;
-    std::vector<Widget*> palya;
+    std::vector<CheckBox*> palya;
     std::string player1;
     std::string player2;
     int res1;
